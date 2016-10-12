@@ -10,8 +10,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ShoppingList : NSObject
+
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,strong) UIColor *color;
 @property (nonatomic,copy) NSString *storeNumber;
+@property (nonatomic,strong) NSMutableArray *groceryItems;
 
 @end

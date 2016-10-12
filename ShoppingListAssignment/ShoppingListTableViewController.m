@@ -23,6 +23,7 @@
     wholeFoods.name = @"Whole Foods";
     wholeFoods.color= [UIColor greenColor];
     wholeFoods.storeNumber=@"5432";
+    wholeFoods.groceryItems = [[NSMutableArray alloc] init];
     [shoppingLists addObject:wholeFoods];
     
     
@@ -30,6 +31,7 @@
     farmerJack.name = @"Farmer Jack";
     farmerJack.color = [UIColor redColor];
     farmerJack.storeNumber=@"3254";
+    farmerJack.groceryItems = [[NSMutableArray alloc] init];
     [shoppingLists addObject:farmerJack];
     
 }

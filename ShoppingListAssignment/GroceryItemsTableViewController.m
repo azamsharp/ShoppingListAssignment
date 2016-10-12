@@ -16,9 +16,12 @@
 @implementation GroceryItemsTableViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     self.title = [NSString stringWithFormat:@"%@:%@",self.selectedShoppingList.name,self.selectedShoppingList.storeNumber];
+    
+   // groceryItems = [[NSMutableArray alloc] init];
     
     self.view.backgroundColor = self.selectedShoppingList.color;
     
@@ -32,24 +35,40 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.selectedShoppingList.groceryItems count];
 }
 
-/*
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    AddGroceryItemViewController *addGroceryItemViewController = segue.destinationViewController;
+    addGroceryItemViewController.delegate = self;
+}
+
+-(void) addGroceryItemViewControllerDidAddItem: (GroceryItem *) groceryItem {
+    
+    [self.selectedShoppingList.groceryItems addObject:groceryItem];
+    
+    [self.tableView reloadData];
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+   
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    GroceryItem *groceryItem = self.selectedShoppingList.groceryItems[indexPath.row];
     
+    cell.textLabel.text = groceryItem.name;
+ 
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

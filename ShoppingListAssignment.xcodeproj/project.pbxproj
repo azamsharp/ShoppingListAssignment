@@ -16,6 +16,8 @@
 		343FA2801DAD3147008EFAA0 /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = 343FA27F1DAD3147008EFAA0 /* ShoppingList.m */; };
 		343FA2831DAD3755008EFAA0 /* GroceryItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343FA2821DAD3755008EFAA0 /* GroceryItemsTableViewController.m */; };
 		343FA2861DAD425A008EFAA0 /* AddShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343FA2851DAD425A008EFAA0 /* AddShoppingListViewController.m */; };
+		34F01F921DAE83F000907219 /* AddGroceryItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F01F911DAE83F000907219 /* AddGroceryItemViewController.m */; };
+		34F01F951DAE84D100907219 /* GroceryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F01F941DAE84D100907219 /* GroceryItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		343FA2821DAD3755008EFAA0 /* GroceryItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryItemsTableViewController.m; sourceTree = "<group>"; };
 		343FA2841DAD425A008EFAA0 /* AddShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddShoppingListViewController.h; sourceTree = "<group>"; };
 		343FA2851DAD425A008EFAA0 /* AddShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddShoppingListViewController.m; sourceTree = "<group>"; };
+		34F01F901DAE83F000907219 /* AddGroceryItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGroceryItemViewController.h; sourceTree = "<group>"; };
+		34F01F911DAE83F000907219 /* AddGroceryItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGroceryItemViewController.m; sourceTree = "<group>"; };
+		34F01F931DAE84D100907219 /* GroceryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryItem.h; sourceTree = "<group>"; };
+		34F01F941DAE84D100907219 /* GroceryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 				343FA27C1DAD3056008EFAA0 /* ShoppingListTableViewController.m */,
 				343FA2841DAD425A008EFAA0 /* AddShoppingListViewController.h */,
 				343FA2851DAD425A008EFAA0 /* AddShoppingListViewController.m */,
+				34F01F901DAE83F000907219 /* AddGroceryItemViewController.h */,
+				34F01F911DAE83F000907219 /* AddGroceryItemViewController.m */,
+				34F01F931DAE84D100907219 /* GroceryItem.h */,
+				34F01F941DAE84D100907219 /* GroceryItem.m */,
 			);
 			path = ShoppingListAssignment;
 			sourceTree = "<group>";
@@ -168,6 +178,8 @@
 			files = (
 				343FA2861DAD425A008EFAA0 /* AddShoppingListViewController.m in Sources */,
 				343FA2691DAD2E85008EFAA0 /* AppDelegate.m in Sources */,
+				34F01F951DAE84D100907219 /* GroceryItem.m in Sources */,
+				34F01F921DAE83F000907219 /* AddGroceryItemViewController.m in Sources */,
 				343FA2801DAD3147008EFAA0 /* ShoppingList.m in Sources */,
 				343FA2831DAD3755008EFAA0 /* GroceryItemsTableViewController.m in Sources */,
 				343FA27D1DAD3056008EFAA0 /* ShoppingListTableViewController.m in Sources */,
@@ -330,6 +342,7 @@
 				343FA27A1DAD2E85008EFAA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -30,6 +30,7 @@
     shoppingList.name = self.storeNameTextField.text;
     shoppingList.storeNumber = self.storeNumberTextField.text;
     shoppingList.color = [UIColor purpleColor];
+    shoppingList.groceryItems = [[NSMutableArray alloc] init];
     
     [self.delegate addShoppingListViewControllerDidAddShoppingList:shoppingList];
     

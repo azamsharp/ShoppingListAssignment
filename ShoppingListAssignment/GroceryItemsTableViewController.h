@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ShoppingList.h"
+#import "AddGroceryItemViewController.h"
+#import "GroceryItem.h" 
 
-@interface GroceryItemsTableViewController : UITableViewController
+@interface GroceryItemsTableViewController : UITableViewController<AddGroceryItemViewControllerDelegete>
 {
-    
+    NSMutableArray *groceryItems; 
 }
 
 @property (nonatomic,strong) ShoppingList *selectedShoppingList;
